@@ -1,0 +1,41 @@
+const mongoose = require('mongoose')
+const bill_schema = new mongoose.Schema({
+    product:{
+        type:Array,
+        required:true,
+    },
+    quantity:{
+        type:Array,
+        min:1,
+        require:true,
+    },
+    amount:{
+        type:Array,
+        require:true,
+    },
+    gst:{
+        type:String,
+        require:true,
+    },
+
+    discount :{
+        type:String,
+        require:true,
+    },
+    payment : {
+        type:String,
+        require:true,
+    },
+    status :{
+        type:String,
+        require:true,
+    },
+    billing_to:{
+        type:String,
+        require:true,
+    },
+})
+
+const billSchema = mongoose.model("bill_schema",bill_schema);
+module.exports = billSchema
+
