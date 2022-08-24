@@ -1,5 +1,5 @@
 const server = require('./index')
-const PORT = process.env.PORT5000;
+const PORT = process.env.PORT||5000
 
 
 

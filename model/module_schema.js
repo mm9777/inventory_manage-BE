@@ -9,7 +9,7 @@ const add_schema = new mongoose.Schema({
         required:true,
     },
     quantity:{
-        type:Array,
+        type:Number,
         min:0,
         required:true,
     }, 
